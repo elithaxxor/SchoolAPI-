@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		653F19FF299874C6008B7179 /* StudentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653F19FE299874C6008B7179 /* StudentsViewModel.swift */; };
+		653F1A0129987673008B7179 /* SampleJson.json in Resources */ = {isa = PBXBuildFile; fileRef = 653F1A0029987673008B7179 /* SampleJson.json */; };
 		65584C96299834E900C30A5C /* SchoolAPIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65584C95299834E900C30A5C /* SchoolAPIApp.swift */; };
 		65584C98299834E900C30A5C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65584C97299834E900C30A5C /* ContentView.swift */; };
 		65584C9A299834EB00C30A5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65584C99299834EB00C30A5C /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 		65584CAC299834EB00C30A5C /* SchoolAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65584CAB299834EB00C30A5C /* SchoolAPITests.swift */; };
 		65584CB6299834EB00C30A5C /* SchoolAPIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65584CB5299834EB00C30A5C /* SchoolAPIUITests.swift */; };
 		65584CB8299834EB00C30A5C /* SchoolAPIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65584CB7299834EB00C30A5C /* SchoolAPIUITestsLaunchTests.swift */; };
+		65584CC529983E2400C30A5C /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65584CC429983E2400C30A5C /* APIManager.swift */; };
+		65584CC729983E4900C30A5C /* Bluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65584CC629983E4900C30A5C /* Bluetooth.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		653F19FE299874C6008B7179 /* StudentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsViewModel.swift; sourceTree = "<group>"; };
+		653F1A0029987673008B7179 /* SampleJson.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SampleJson.json; sourceTree = "<group>"; };
 		65584C92299834E900C30A5C /* SchoolAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchoolAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65584C95299834E900C30A5C /* SchoolAPIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolAPIApp.swift; sourceTree = "<group>"; };
 		65584C97299834E900C30A5C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,6 +54,8 @@
 		65584CB1299834EB00C30A5C /* SchoolAPIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SchoolAPIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65584CB5299834EB00C30A5C /* SchoolAPIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolAPIUITests.swift; sourceTree = "<group>"; };
 		65584CB7299834EB00C30A5C /* SchoolAPIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolAPIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		65584CC429983E2400C30A5C /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		65584CC629983E4900C30A5C /* Bluetooth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bluetooth.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +83,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		653F1A02299886BD008B7179 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				65584C97299834E900C30A5C /* ContentView.swift */,
+				65584C95299834E900C30A5C /* SchoolAPIApp.swift */,
+				65584C9B299834EB00C30A5C /* Preview Content */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		653F1A03299886C7008B7179 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				65584CC429983E2400C30A5C /* APIManager.swift */,
+				65584CC629983E4900C30A5C /* Bluetooth.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		653F1A04299886EB008B7179 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				653F1A0029987673008B7179 /* SampleJson.json */,
+				65584C99299834EB00C30A5C /* Assets.xcassets */,
+				65584C9C299834EB00C30A5C /* Preview Assets.xcassets */,
+				65584C9E299834EB00C30A5C /* Persistence.swift */,
+				65584CA0299834EB00C30A5C /* SchoolAPI.xcdatamodeld */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		653F1A052998872D008B7179 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				653F19FE299874C6008B7179 /* StudentsViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		65584C89299834E900C30A5C = {
 			isa = PBXGroup;
 			children = (
@@ -98,12 +145,10 @@
 		65584C94299834E900C30A5C /* SchoolAPI */ = {
 			isa = PBXGroup;
 			children = (
-				65584C95299834E900C30A5C /* SchoolAPIApp.swift */,
-				65584C97299834E900C30A5C /* ContentView.swift */,
-				65584C99299834EB00C30A5C /* Assets.xcassets */,
-				65584C9E299834EB00C30A5C /* Persistence.swift */,
-				65584CA0299834EB00C30A5C /* SchoolAPI.xcdatamodeld */,
-				65584C9B299834EB00C30A5C /* Preview Content */,
+				653F1A04299886EB008B7179 /* Assets */,
+				653F1A052998872D008B7179 /* Models */,
+				653F1A03299886C7008B7179 /* Managers */,
+				653F1A02299886BD008B7179 /* View */,
 			);
 			path = SchoolAPI;
 			sourceTree = "<group>";
@@ -111,7 +156,6 @@
 		65584C9B299834EB00C30A5C /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				65584C9C299834EB00C30A5C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -239,6 +283,7 @@
 			files = (
 				65584C9D299834EB00C30A5C /* Preview Assets.xcassets in Resources */,
 				65584C9A299834EB00C30A5C /* Assets.xcassets in Resources */,
+				653F1A0129987673008B7179 /* SampleJson.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,8 +309,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				65584CA2299834EB00C30A5C /* SchoolAPI.xcdatamodeld in Sources */,
+				653F19FF299874C6008B7179 /* StudentsViewModel.swift in Sources */,
 				65584C9F299834EB00C30A5C /* Persistence.swift in Sources */,
+				65584CC529983E2400C30A5C /* APIManager.swift in Sources */,
 				65584C98299834E900C30A5C /* ContentView.swift in Sources */,
+				65584CC729983E4900C30A5C /* Bluetooth.swift in Sources */,
 				65584C96299834E900C30A5C /* SchoolAPIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
