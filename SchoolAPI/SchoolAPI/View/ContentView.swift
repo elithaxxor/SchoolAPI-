@@ -15,7 +15,7 @@ import Combine
 //    var school = "" { didSet { didChange.send() }}
 //}
 struct ContentView: View {
-    
+
     
     
     @Environment(\.managedObjectContext) private var viewContext

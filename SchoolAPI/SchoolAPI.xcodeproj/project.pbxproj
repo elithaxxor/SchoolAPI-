@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		653671D92999A96D0078E753 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65584C9C299834EB00C30A5C /* Preview Assets.xcassets */; };
 		653F19FF299874C6008B7179 /* StudentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653F19FE299874C6008B7179 /* StudentsViewModel.swift */; };
 		653F1A0129987673008B7179 /* SampleJson.json in Resources */ = {isa = PBXBuildFile; fileRef = 653F1A0029987673008B7179 /* SampleJson.json */; };
+		653F1A0729996F38008B7179 /* Schools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653F1A0629996F38008B7179 /* Schools.swift */; };
 		65584C96299834E900C30A5C /* SchoolAPIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65584C95299834E900C30A5C /* SchoolAPIApp.swift */; };
 		65584C98299834E900C30A5C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65584C97299834E900C30A5C /* ContentView.swift */; };
 		65584C9A299834EB00C30A5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65584C99299834EB00C30A5C /* Assets.xcassets */; };
-		65584C9D299834EB00C30A5C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65584C9C299834EB00C30A5C /* Preview Assets.xcassets */; };
 		65584C9F299834EB00C30A5C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65584C9E299834EB00C30A5C /* Persistence.swift */; };
 		65584CA2299834EB00C30A5C /* SchoolAPI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65584CA0299834EB00C30A5C /* SchoolAPI.xcdatamodeld */; };
 		65584CAC299834EB00C30A5C /* SchoolAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65584CAB299834EB00C30A5C /* SchoolAPITests.swift */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		653F19FE299874C6008B7179 /* StudentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsViewModel.swift; sourceTree = "<group>"; };
 		653F1A0029987673008B7179 /* SampleJson.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SampleJson.json; sourceTree = "<group>"; };
+		653F1A0629996F38008B7179 /* Schools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schools.swift; sourceTree = "<group>"; };
 		65584C92299834E900C30A5C /* SchoolAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchoolAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65584C95299834E900C30A5C /* SchoolAPIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolAPIApp.swift; sourceTree = "<group>"; };
 		65584C97299834E900C30A5C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -87,8 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				65584C97299834E900C30A5C /* ContentView.swift */,
+				653F19FE299874C6008B7179 /* StudentsViewModel.swift */,
 				65584C95299834E900C30A5C /* SchoolAPIApp.swift */,
-				65584C9B299834EB00C30A5C /* Preview Content */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -106,10 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				653F1A0029987673008B7179 /* SampleJson.json */,
-				65584C99299834EB00C30A5C /* Assets.xcassets */,
-				65584C9C299834EB00C30A5C /* Preview Assets.xcassets */,
 				65584C9E299834EB00C30A5C /* Persistence.swift */,
-				65584CA0299834EB00C30A5C /* SchoolAPI.xcdatamodeld */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -117,7 +116,7 @@
 		653F1A052998872D008B7179 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				653F19FE299874C6008B7179 /* StudentsViewModel.swift */,
+				653F1A0629996F38008B7179 /* Schools.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -145,6 +144,10 @@
 		65584C94299834E900C30A5C /* SchoolAPI */ = {
 			isa = PBXGroup;
 			children = (
+				65584C9B299834EB00C30A5C /* Preview Content */,
+				65584C99299834EB00C30A5C /* Assets.xcassets */,
+				65584CA0299834EB00C30A5C /* SchoolAPI.xcdatamodeld */,
+				65584C9C299834EB00C30A5C /* Preview Assets.xcassets */,
 				653F1A04299886EB008B7179 /* Assets */,
 				653F1A052998872D008B7179 /* Models */,
 				653F1A03299886C7008B7179 /* Managers */,
@@ -281,8 +284,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65584C9D299834EB00C30A5C /* Preview Assets.xcassets in Resources */,
 				65584C9A299834EB00C30A5C /* Assets.xcassets in Resources */,
+				653671D92999A96D0078E753 /* Preview Assets.xcassets in Resources */,
 				653F1A0129987673008B7179 /* SampleJson.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,6 +314,7 @@
 				65584CA2299834EB00C30A5C /* SchoolAPI.xcdatamodeld in Sources */,
 				653F19FF299874C6008B7179 /* StudentsViewModel.swift in Sources */,
 				65584C9F299834EB00C30A5C /* Persistence.swift in Sources */,
+				653F1A0729996F38008B7179 /* Schools.swift in Sources */,
 				65584CC529983E2400C30A5C /* APIManager.swift in Sources */,
 				65584C98299834E900C30A5C /* ContentView.swift in Sources */,
 				65584CC729983E4900C30A5C /* Bluetooth.swift in Sources */,

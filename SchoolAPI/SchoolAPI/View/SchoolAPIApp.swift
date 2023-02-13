@@ -7,7 +7,15 @@
 
 import SwiftUI
 import CoreBluetooth
+import Combine
 
+
+//struct downloadWithSimpleCombine : View {
+//    typealias Body = <#type#>
+//    
+//    @StateObject var vm = APIManager()
+//
+//}
 @main
 struct SchoolAPIApp: App {
     
@@ -16,12 +24,29 @@ struct SchoolAPIApp: App {
     @ObservedObject private var viewModel = StudentsViewModel()
     
     
+    var controller = StudentsViewModel()
+    
     let persistenceController = PersistenceController.shared
 
     var body: some Scene {
    
         WindowGroup {
+////
+//            var data = controller.school
+//            APIManager.
+//             List {
+//                 ForEach(data) { school in
+//                         VStack {
+//                             Text(school.title)
+//                                 .font(.headline)
+//                             Text(school.sat)
+//                                 .foregroundColor(.gray)
+//                         }
+//                     }
+//                 }
+
             ZStack{
+                
                 ContentView()
                     .environment(\.managedObjectContext, persistenceController.container.viewContext)
                 
